@@ -50,11 +50,7 @@ export function Projects() {
       description: "Personal portfolio showcasing projects and skills with modern design.",
       tech: ["React.js", "Tailwind CSS", "Animations"]
     },
-    {
-      title: "Weather App",
-      description: "Weather forecasting application with location-based data and clean UI.",
-      tech: ["JavaScript", "Weather API", "CSS"]
-    }
+   
   ];
 
   return (
