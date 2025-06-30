@@ -35,14 +35,12 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionate Computer Science student at Silver Oak University with a 9.57 CGPA, 
+            Passionate Computer Enginnering student at Silver Oak University with a 9.57 CGPA, 
             crafting digital experiences with modern web technologies and creative problem-solving.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
-              View My Work
-            </button>
+           
             
             <div className="flex gap-4">
               <a
@@ -70,7 +68,7 @@ export function Hero() {
 
         <button
           onClick={scrollToAbout}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+          className="absolute left-1/2 transform -translate-x-1/2 animate-bounce"
         >
           <ChevronDown className="w-8 h-8 text-gray-400 dark:text-gray-500" />
         </button>

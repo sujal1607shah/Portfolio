@@ -126,7 +126,7 @@ export function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-200"
-                      placeholder="John Doe"
+                      
                     />
                   </div>
                   <div>
@@ -141,7 +141,7 @@ export function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-200"
-                      placeholder="john@example.com"
+                      
                     />
                   </div>
                 </div>
@@ -158,7 +158,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-200"
-                    placeholder="Project Collaboration"
+                    
                   />
                 </div>
 
@@ -174,7 +174,7 @@ export function Contact() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-200 resize-none"
-                    placeholder="Tell me about your project or opportunity..."
+                    
                   />
                 </div>
 

@@ -47,7 +47,7 @@ export function About() {
               Shah Sujal Jayantkumar
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I'm a dedicated Computer Science student at Silver Oak University with an impressive 9.57 CGPA. 
+              I'm a dedicated Computer Engineering student at Silver Oak University with an impressive 9.57 CGPA. 
               My journey in tech is driven by curiosity and a passion for creating innovative solutions that 
               make a difference.
             </p>
