@@ -70,7 +70,7 @@ export function Footer() {
                 Silver Oak University
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Computer Science Student
+                Computer Enginnering Student
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 CGPA: 9.57
