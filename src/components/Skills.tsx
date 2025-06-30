@@ -40,8 +40,8 @@ export function Skills() {
       icon: <Wrench className="w-6 h-6" />,
       color: "from-orange-500 to-red-500",
       skills: [
-        { name: "Appwrite", level: 70 },
-        { name: "REST APIs", level: 75 }
+        { name: "Appwrite", level: 70 }
+      
       ]
     }
   ];
