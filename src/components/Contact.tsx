@@ -56,7 +56,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">Email</p>
-                    <p className="text-gray-900 dark:text-white font-medium">sujal.shah@example.com</p>
+                    <p className="text-gray-900 dark:text-white font-medium">shahsujal2005@gmail.com</p>
                   </div>
                 </div>
 
@@ -66,7 +66,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">Location</p>
-                    <p className="text-gray-900 dark:text-white font-medium">Silver Oak University</p>
+                    <p className="text-gray-900 dark:text-white font-medium">Ahmedabad</p>
                   </div>
                 </div>
 

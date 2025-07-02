@@ -67,7 +67,7 @@ export function Footer() {
             </h3>
             <div className="space-y-2">
               <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Silver Oak University
+                Ahmedabad, Gujarat
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Computer Enginnering Student
@@ -82,7 +82,7 @@ export function Footer() {
         <div className="border-t border-gray-200 dark:border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 md:mb-0">
-              © 2024 Sujal Shah. All rights reserved.
+              © 2025 Sujal Shah. All rights reserved.
             </p>
             <p className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-1">
               Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> using React & Tailwind CSS
