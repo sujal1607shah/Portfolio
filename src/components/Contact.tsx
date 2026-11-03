@@ -10,6 +10,7 @@ export function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -25,13 +26,37 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage('');
     
-    // Simulate submission delay
-    await new Promise(resolve => setTimeout(resolve, 800));
-    
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: '90870cbd-3f97-4e29-83ad-58c406d7f49b',
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || 'Portfolio Inquiry / Opportunity',
+          message: formData.message,
+          from_name: formData.name
+        })
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setErrorMessage(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setErrorMessage('Network error occurred. Please check your connection or reach out directly via email.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -146,6 +171,12 @@ export function Contact() {
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
               Fill out the form below or reach out directly at shahsujal2005@gmail.com.
             </p>
+
+            {errorMessage && (
+              <div className="mb-6 p-4 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200/80 dark:border-red-800/50 text-red-700 dark:text-red-300 text-sm">
+                {errorMessage}
+              </div>
+            )}
             
             {submitted ? (
               <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/20 border border-emerald-200/60 dark:border-emerald-800/40 text-center">
