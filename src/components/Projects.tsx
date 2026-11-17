@@ -119,6 +119,59 @@ export function Projects() {
       ]
     },
     {
+      id: "retailboon-staff",
+      title: "RetailBoon Staff — Automated Geofencing Attendance App",
+      category: "mobile",
+      badge: "Production Mobile App",
+      role: "React Native Developer",
+      duration: "Production Application",
+      description:
+        "React Native-based mobile application engineered to streamline retail staff operations and automate employee attendance management using GPS-based geofencing and proximity tracking.",
+      extendedOverview:
+        "RetailBoon Staff is an enterprise workforce application tailored specifically for retail store staff. The application eliminates manual punch-ins by utilizing GPS-based geofencing to automatically track employee check-ins and check-outs as they enter and exit predefined store boundaries. It features real-time staff authentication, zone presence verification, automated attendance synchronization via REST APIs, and responsive UI components managed cleanly with Zustand and AsyncStorage.",
+      coreHighlights: [
+        "GPS-Based Geofencing: Implemented automated employee attendance tracking triggered by geographical proximity to registered retail store locations.",
+        "Automated Check-In/Check-Out: Enabled background boundary crossing detection to seamlessly check staff in and out upon entering or exiting store perimeters.",
+        "Location & Work Zone Tracking: Integrated device location services to continuously verify active employee presence within designated work zones.",
+        "Staff Authentication & Profiles: Built secure authentication, session persistence, and comprehensive employee profile management flows.",
+        "REST API & Data Synchronization: Connected backend endpoints for real-time attendance logs, offline-safe event queues, and instant sync.",
+        "Zustand State Architecture: Utilized Zustand and AsyncStorage for atomic status management, reliable caching, and smooth UX without main-thread jank.",
+        "Reusable UI Components: Developed modular, responsive interface elements tailored for fast, frictionless daily retail operations."
+      ],
+      architectureDetails: [
+        {
+          title: "Geofencing & Boundary Detection Engine",
+          description:
+            "Implemented GPS proximity calculation and boundary event triggers to automatically record attendance timestamps whenever staff cross registered store geofences."
+        },
+        {
+          title: "Reliable Attendance State Management (Zustand)",
+          description:
+            "Built lightweight atomic stores for tracking live check-in statuses, shift timers, and store metadata with AsyncStorage persistence for offline continuity."
+        },
+        {
+          title: "REST APIs & Data Synchronization",
+          description:
+            "Architected network layers to synchronize staff attendance logs, shift records, and authentication states securely with the backend database."
+        },
+        {
+          title: "Mobile Location Services & Optimization",
+          description:
+            "Configured efficient location updates and battery-conscious background checks to prevent excessive device power drain while preserving accuracy."
+        }
+      ],
+      tech: [
+        "React Native",
+        "JavaScript",
+        "Zustand",
+        "Geofencing",
+        "GPS",
+        "REST APIs",
+        "AsyncStorage",
+        "React Navigation"
+      ]
+    },
+    {
       id: "transitsync",
       title: "TransitSync — Intelligent Transport System",
       category: "research",
@@ -177,45 +230,6 @@ export function Projects() {
       link: "https://rjwave.org/jaafr/viewpaperforall.php?paper=JAAFRTH00114"
     },
     {
-      id: "native-modules-windows",
-      title: "Windows Native Modules & Hardware Bridge",
-      category: "desktop",
-      badge: "Desktop Architecture",
-      role: "System & Native Module Developer",
-      duration: "Native Integration",
-      description:
-        "Specialized architecture bridging React Native Windows with native C#/C++ modules. Implemented peripheral communication for retail hardware including thermal receipt printers, barcode scanners, and local Windows system APIs.",
-      extendedOverview:
-        "React Native Windows applications often require access to desktop-specific hardware and Win32 / UWP system capabilities. This project implements clean, typed native module bridges in C#/C++ that expose event emitters, asynchronous methods, and peripheral status monitors directly to the React Native JavaScript runtime.",
-      coreHighlights: [
-        "Created custom native module wrappers for thermal printer ESC/POS command sequences.",
-        "Configured asynchronous promise-based JavaScript bridges connecting React Native to Windows WinRT APIs.",
-        "Debugged native compilation, project configuration, and DLL linkage in Visual Studio.",
-        "Ensured zero-lag background thread execution to prevent UI freezing during hardware I/O."
-      ],
-      architectureDetails: [
-        {
-          title: "Native Bridge Contract",
-          description:
-            "Typed TypeScript interfaces mapping 1-to-1 with native Windows C#/C++ module signatures for predictable type safety."
-        },
-        {
-          title: "Hardware Peripheral Protocol",
-          description:
-            "Built raw byte streaming and status event handlers for USB and serial POS receipt printers."
-        }
-      ],
-      tech: [
-        "React Native Windows",
-        "C# / C++",
-        "Visual Studio",
-        "WinRT / Win32 APIs",
-        "TypeScript",
-        "Native Modules",
-        "Hardware Integration"
-      ]
-    },
-    {
       id: "kidolio",
       title: "Kidolio — Interactive Learning Platform",
       category: "web",
@@ -232,23 +246,6 @@ export function Projects() {
       ],
       tech: ["React.js", "Tailwind CSS", "JavaScript", "Figma", "REST APIs"],
       link: "https://kidolio.vercel.app/home"
-    },
-    {
-      id: "appium-test-suite",
-      title: "Cross-Platform POS Automation Suite",
-      category: "enterprise",
-      badge: "Quality Engineering",
-      role: "Automation Engineer",
-      description:
-        "Comprehensive automated UI testing infrastructure using Appium and WebdriverIO (WDIO) for React Native mobile and Windows desktop applications. Automates critical checkout flows, billing validations, and regression testing.",
-      extendedOverview:
-        "Engineered reliable test automation strategies to eliminate flaky selectors in React Native Windows and mobile builds. Created reusable Page Object Models, test execution runners, and detailed diagnostic logs for test failures.",
-      coreHighlights: [
-        "Built Page Object Models for Point of Sale billing, item additions, and discounts.",
-        "Resolved complex Windows UI element locator failures using native accessibility identifiers.",
-        "Integrated test reporting and automated screenshot capture on execution failures."
-      ],
-      tech: ["Appium", "WebdriverIO (WDIO)", "TypeScript", "JavaScript", "React Native Windows", "CI/CD Workflows"]
     },
     {
       id: "blog-platform",
